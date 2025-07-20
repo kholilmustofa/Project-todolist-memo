@@ -1,20 +1,28 @@
-# Proyek To-Do List & Memo
+# Memo - Web To-Do List
 
-Ini adalah aplikasi web sederhana untuk mengelola daftar tugas (to-do list) dan memo pribadi. Aplikasi ini dibangun menggunakan Laravel sebagai backend dan di-styling dengan Tailwind CSS & DaisyUI.
+Ini adalah aplikasi web sederhana untuk mengelola daftar tugas (to-do list), dengan nama "memo". Aplikasi ini dibangun menggunakan Laravel sebagai backend dan di-styling dengan Tailwind CSS & DaisyUI. 
 
 ---
+
+## 🛠️ Fitur Utama:
+
+* Manajemen tugas (CRUD: Buat, Tandai Selesai, Hapus).
+* Kategorisasi tugas berdasarkan tanggal (Hari Ini, Besok, Mendatang).
+* "My Lists" kustom untuk organisasi tugas yang lebih baik.
+* Pengingat tugas dengan tanggal dan waktu spesifik.
+* Pengalaman pengguna yang mulus tanpa refresh halaman berkat AJAX.
 
 ## 🚀 Teknologi yang Digunakan
 
 * **Backend**: Laravel 12
 * **Frontend**: Tailwind CSS, DaisyUI, Alpine.js
-* **Database**: SQLite
+* **Database**: SQLite, TablePlus
 
 ---
 
 ## ⚙️ Instalasi & Konfigurasi Lokal
 
-Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer Anda:
+Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer Kamu:
 
 1.  **Clone Repositori**
     Buka terminal atau Git Bash dan jalankan perintah berikut:
@@ -34,7 +42,7 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer Anda:
     ```
 
 4.  **Buat File Environment**
-    Salin file `.env.example` menjadi `.env`. File ini berisi semua konfigurasi untuk lingkungan lokal Anda.
+    Salin file `.env.example` menjadi `.env`. File ini berisi semua konfigurasi untuk lingkungan lokal Kamu.
     ```bash
     cp .env.example .env
     ```
@@ -78,6 +86,6 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer Anda:
     ```
 
 2.  **Buka di Browser**
-    Buka browser Anda dan kunjungi alamat: **http://127.0.0.1:8000**
+    Buka browser Kamu dan kunjungi alamat: **http://127.0.0.1:8000**
 
-Selamat! Sekarang aplikasi To-Do List sudah berjalan di komputer lokal Anda.
+Selamat! Sekarang aplikasi To-Do List sudah berjalan di komputer lokal Kamu.
