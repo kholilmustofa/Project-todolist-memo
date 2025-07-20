@@ -1,61 +1,83 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Proyek To-Do List & Memo
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Ini adalah aplikasi web sederhana untuk mengelola daftar tugas (to-do list) dan memo pribadi. Aplikasi ini dibangun menggunakan Laravel sebagai backend dan di-styling dengan Tailwind CSS & DaisyUI.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Teknologi yang Digunakan
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* **Backend**: Laravel 12
+* **Frontend**: Tailwind CSS, DaisyUI, Alpine.js
+* **Database**: SQLite
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## ⚙️ Instalasi & Konfigurasi Lokal
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Berikut adalah langkah-langkah untuk menjalankan proyek ini di komputer Anda:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1.  **Clone Repositori**
+    Buka terminal atau Git Bash dan jalankan perintah berikut:
+    ```bash
+    git clone [https://github.com/kholilmustofa/Project-todolist-memo.git](https://github.com/kholilmustofa/Project-todolist-memo.git)
+    ```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2.  **Masuk ke Direktori Proyek**
+    ```bash
+    cd Project-todolist-memo
+    ```
 
-## Laravel Sponsors
+3.  **Install Dependensi PHP**
+    Jalankan Composer untuk mengunduh semua paket yang dibutuhkan oleh Laravel.
+    ```bash
+    composer install
+    ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4.  **Buat File Environment**
+    Salin file `.env.example` menjadi `.env`. File ini berisi semua konfigurasi untuk lingkungan lokal Anda.
+    ```bash
+    cp .env.example .env
+    ```
 
-### Premium Partners
+5.  **Generate Kunci Aplikasi**
+    Setiap aplikasi Laravel membutuhkan kunci enkripsi yang unik.
+    ```bash
+    php artisan key:generate
+    ```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+6.  **Siapkan Database**
+    Proyek ini menggunakan SQLite. Buat file database kosong di dalam direktori `database/`.
+    ```bash
+    touch database/database.sqlite
+    ```
 
-## Contributing
+7.  **Jalankan Migrasi Database**
+    Perintah ini akan membuat semua tabel yang dibutuhkan oleh aplikasi di dalam file `database.sqlite`.
+    ```bash
+    php artisan migrate
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+8.  **Install Dependensi JavaScript/CSS**
+    ```bash
+    npm install
+    ```
 
-## Code of Conduct
+9.  **Compile Aset Frontend**
+    ```bash
+    npm run build
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## ▶️ Menjalankan Aplikasi
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1.  **Jalankan Server Lokal**
+    Gunakan perintah `serve` dari Artisan untuk menjalankan server pengembangan PHP.
+    ```bash
+    php artisan serve
+    ```
 
-## License
+2.  **Buka di Browser**
+    Buka browser Anda dan kunjungi alamat: **http://127.0.0.1:8000**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Selamat! Sekarang aplikasi To-Do List sudah berjalan di komputer lokal Anda.
